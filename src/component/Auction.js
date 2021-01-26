@@ -11,7 +11,8 @@ const Auction = () => {
     const [loading, isloading] = useState(false)
     const SendAuction = (e) => {
         e.preventDefault()
-        
+        if(endTime >= time){
+
         const data = {
             title : title,
             start_time : time,
@@ -31,12 +32,18 @@ const Auction = () => {
                 history.push('/Auction-product')
             })   
             .catch(err => {
+                isloading(false)
                setError('Complete the input form')
                 return err
             }
                 )
              }
         sendRequest()
+            }
+        
+    else {
+        setError('End date is behind')
+    }
     }
 
     return(
