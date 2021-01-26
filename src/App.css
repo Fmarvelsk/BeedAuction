@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+form{
+  margin-top: 3rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+.form-c {
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  flex: 0 0 70%;
+}
+.form-field{
+  height: 27px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.item-image{
+  margin-top: 0.5rem;
+  width: 71.17px;
+height: 69.7px;
+background: #C4C4C4;
+border-radius: 20px;
+}
+.button-form {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: #0a66c2;
+  color: #ffffff;
+  padding: 10px 25px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+.row {
+  display: flex;
+  margin: 2rem 1rem;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.flex-item {
+  padding: 0 15px;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  width: 100%;
+  background-color:#ffffff;
+  
+}
+input[type="text"]{
+  text-transform: capitalize;
+}
+.details > p {
+  text-transform: capitalize;
+}
+.cl{
+  color: red;
+  margin-bottom: 0.5rem;
+}
+@media(min-width:768px){
+  .row{
+    padding: 3rem;
+  }
+.flex-item{
+  flex: 0 0 40%;
+  max-width: 40%;
+  }
+  .item{
+    flex-direction: row !important;
+  }
+  .time{
+    font-size: 14px !important;
+  }
+}
+.item{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 10px;
+  padding-bottom: 1.5rem !important;
+  flex-direction: row-reverse;
+}
+.setTime{
+  width: 120px;
+  text-align: right !important;
+}
+.time{
+  font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+position: absolute;
+bottom: 0;
+}
+.details{
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+
+}
