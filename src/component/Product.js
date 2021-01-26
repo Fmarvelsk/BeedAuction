@@ -40,11 +40,13 @@ const Product = (props) => {
             setMinutes('')
             setSeconds('')
         }
+        
+     //eslint-disable-next-line 
     }, [])
     return(
          <div className="flex-item">
                 <div className="item">
-                    <img src={props.item.image} alt="image" className="item-image"/>
+                    <img src={props.item.image} alt="product" className="item-image"/>
                     <p className="time"> 
                     {close ?
                         timer :

@@ -4,9 +4,11 @@ import axios from 'axios'
 import Svg from '../806.gif'
 const ProductItem = () => {
     const [product, setProduct] = useState('')
+     //eslint-disable-next-line 
     const [loading, setloading] = useState(true)
     useEffect( () => {
         const fetchProduct = async() => {
+     //eslint-disable-next-line 
             const fetch = await axios({
                 method: 'GET',
                 headers: { 'Content-Type' : 'application/json'},
@@ -30,7 +32,7 @@ const ProductItem = () => {
 
             ))
         
-        : (<><img src={Svg} /> <p>Loading Product....</p></>)
+        : (<><img src={Svg} alt="svg"/> <p>Loading Product....</p></>)
         }
         </div>
     )
