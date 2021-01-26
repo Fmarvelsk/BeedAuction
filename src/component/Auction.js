@@ -8,7 +8,7 @@ const Auction = () => {
     const [endTime, setEndTime] = useState()
     const [image, setImage] = useState()
     const [error, setError] = useState()
-    //const [loading, isloading] = useState(false)
+    const [loading, isloading] = useState(false)
     const SendAuction = (e) => {
         e.preventDefault()
         
@@ -20,6 +20,7 @@ const Auction = () => {
         }
         const sendRequest = async () => {
      //eslint-disable-next-line 
+     isloading(true)
             const request = await axios({
                 method: "POST",
                 headers: { 'Content-Type' : 'application/json'},
@@ -72,7 +73,7 @@ const Auction = () => {
 
             }}/>
              
-             <button type="submit" className="button-form" >Submit</button>
+             <button type="submit" className="button-form"> {loading ? 'loading...' : 'Submit'} </button>
              </div>
              </form>
         </div>

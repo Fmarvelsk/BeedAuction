@@ -92,7 +92,7 @@ input[type="text"]{
   flex-direction: row-reverse;
 }
 .setTime{
-  width: 120px;
+  width: 101px;
   text-align: right !important;
 }
 .time{

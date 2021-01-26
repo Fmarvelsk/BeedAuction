@@ -10,7 +10,7 @@ const Product = (props) => {
         
     useEffect( () => {
         const countDown = new Date(`${props.item.start_time}`).getTime()
-        const presentDate = new Date('Jan 26, 2021 13:15').getTime()
+        const presentDate = new Date(`${props.item.end_time}`).getTime()
            
         var x = setInterval( () => {
                const current = new Date().getTime()
@@ -54,7 +54,7 @@ const Product = (props) => {
                     <div className="details">
                         <p>Title: {props.item.title}</p>
                         <p className="setTime">Start time: {moment(props.item.start_time).format("MMM Do, YYYY h:mmA")}</p>
-                        <p className="setTime">End Time: Nov 02, 2020 08:00AM</p>
+                        <p className="setTime">End Time: {moment(props.item.end_time).format("MMM Do, YYYY h:mmA")}</p>
                     </div>
                 </div>
             </div>

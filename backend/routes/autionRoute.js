@@ -4,6 +4,9 @@ const { cloudinary } =  require('../utils/upload')
 const auctionRoute = express.Router()
 
 
+auctionRoute.get('/', async (req, res, next) => {
+    res.send('Working')
+})
 auctionRoute.post('/sendAuction', async (req, res, next) => {
     try {
     if(req.body.title && req.body.start_time && req.body.end_time){ 
