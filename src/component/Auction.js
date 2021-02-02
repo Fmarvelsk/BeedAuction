@@ -26,7 +26,7 @@ const Auction = () => {
                 method: "POST",
                 headers: { 'Content-Type' : 'application/json'},
 				data : data,	
-                url:"http://localhost:7777/sendAuction"
+                url:"https://beed-auction.herokuapp.com/sendAuction"
             }).then( () => {
                 setError('')
                 history.push('/Auction-product')

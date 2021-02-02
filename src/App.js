@@ -6,6 +6,7 @@ import ProductItem from './component/productItem'
 function App() {
   return (
     <div className="App">
+      
       <Router>
         <Switch>
         <Route exact path="/">
