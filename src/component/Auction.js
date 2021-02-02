@@ -20,9 +20,9 @@ const Auction = () => {
             image : image
         }
         const sendRequest = async () => {
-     //eslint-disable-next-line 
      isloading(true)
-            const request = await axios({
+     //eslint-disable-next-line 
+           const request = await axios({
                 method: "POST",
                 headers: { 'Content-Type' : 'application/json'},
 				data : data,	
