@@ -12,12 +12,11 @@ auctionRoute.post('/sendAuction', async (req, res, next) => {
     if(req.body.title && req.body.start_time && req.body.end_time){ 
         const image = req.body.image       
         const uploadResponse = await cloudinary.uploader.upload(image)
-    
         const data = new Auction({
             title : req.body.title,
             start_time : req.body.start_time,
             end_time : req.body.end_time,
-            image : uploadResponse.url
+            image : uploadResponse.secure_url
         })
         data.save().then( (data) => {
             return res.status(200).send(data)

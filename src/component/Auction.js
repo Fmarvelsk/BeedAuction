@@ -21,12 +21,12 @@ const Auction = () => {
         }
         const sendRequest = async () => {
      isloading(true)
-     //eslint-disable-next-line 
+     //eslint-disable-next-line
            const request = await axios({
                 method: "POST",
                 headers: { 'Content-Type' : 'application/json'},
 				data : data,	
-                url:"https://beed-auction.herokuapp.com/sendAuction"
+                url:"http://beed-auction.herokuapp.com/sendAuction"
             }).then( () => {
                 setError('')
                 history.push('/Auction-product')

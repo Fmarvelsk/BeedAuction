@@ -12,7 +12,7 @@ const ProductItem = () => {
             const fetch = await axios({
                 method: 'GET',
                 headers: { 'Content-Type' : 'application/json'},
-                url: 'https://beed-auction.herokuapp.com/getProduct',
+                url: 'http://beed-auction.herokuapp.com/getProduct',
 
             }).then ( data => {
                     setProduct(data)
